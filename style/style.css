@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-grid{
+    max-width: 1189px;
+    width: 90%;
+    margin: auto;
+    display: grid;
+    border: 1px solid black;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 450px;
+    background-color: aliceblue;
+    padding: 25px;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+}
+
+input{
+    border: 2px solid black;
+    border-radius: 13px;
+    background-color: transparent;
+    padding: 13px;
+}
+
+.container-grid p{
+    border-right: 1px solid black;
+    padding: 15px;
+    text-align: center;
+}
+
+.container-grid p:last-child{
+    border: none;
+}
+
+input:invalid{
+    border: 1px solid red;
+}
+
+input:valid{
+    border: 1px solid green;
+}
